@@ -1,13 +1,11 @@
-#include "3-calc.h"
-#include <stdlib.h>
-#include <stdio.h>
+#include "calc.h"
 
 /**
- * op_add - ...
- * @a: ...
- * @b: ...
+ * op_add - function that calculate the sum of argument value
+ * @a: first value
+ * @b: second value
  *
- * Return: ...
+ * Return: the sum of a and b
  */
 int op_add(int a, int b)
 {
@@ -15,11 +13,11 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - ...
- * @a: ...
- * @b: ...
+ * op_sub - function that calculate the sub of argument value
+ * @a: first value
+ * @b: second value
  *
- * Return: ...
+ * Return: The difference of a and b
  */
 int op_sub(int a, int b)
 {
@@ -27,11 +25,11 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - ...
- * @a: ...
- * @b: ...
+ * op_mul - function that calculate the mul of argument value
+ * @a: first value
+ * @b: second value
  *
- * Return: ...
+ * Return: the product of a and b
  */
 int op_mul(int a, int b)
 {
@@ -39,37 +37,25 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - ...
- * @a: ...
- * @b: ...
+ * op_div - function that calculate the div of argument value
+ * @a: first value
+ * @b: second value
  *
- * Return: ,,,
+ * Return: the result of the division of a by b
  */
 int op_div(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-
 	return (a / b);
 }
 
 /**
- * op_mod - ...
- * @a: ...
- * @b: ...
+ * op_mod - function that calculate the mod of argument value
+ * @a: first value
+ * @b: second value
  *
- * Return: ...
+ * Return: the remainder of the division of a by b
  */
 int op_mod(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-
 	return (a % b);
 }
